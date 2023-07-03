@@ -1,0 +1,15 @@
+execute anchored eyes positioned ^ ^ ^ run function microbuilder:math/ray2
+
+data modify storage microbuilder:calc break set value {success:0b}
+
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{x:-1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~0.005 ~ ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{x:1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~-0.005 ~ ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{y:-1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~ ~0.005 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{y:1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~ ~-0.005 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{z:-1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~ ~ ~0.005 align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+execute if data storage microbuilder:calc math.ray2{hit:1b,hit_info:{face_normal:{z:1}}} as @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] at @s positioned ~ ~ ~-0.005 align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,limit=1,distance=..0.1] run function microbuilder:building_mode/break
+
+execute if data storage microbuilder:calc break{success:1b} if predicate microbuilder:consume_items if data storage microbuilder:calc break.Item run data modify storage microbuilder:calc Item set from storage microbuilder:calc break.Item 
+execute if data storage microbuilder:calc break{success:1b} if predicate microbuilder:consume_items if data storage microbuilder:calc break.Item run function microbuilder:item/give
+
+kill @e[type=marker,distance=..16,tag=microbuilder.math.raycast]

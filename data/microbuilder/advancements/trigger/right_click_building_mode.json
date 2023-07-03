@@ -1,0 +1,24 @@
+{
+  "parent": "microbuilder:trigger/root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+	  "nbt": "{
+            Tags:[\"microbuilder.building_mode_hitbox\"]
+	  }"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "microbuilder:trigger/right_click_building_mode"
+  }
+}

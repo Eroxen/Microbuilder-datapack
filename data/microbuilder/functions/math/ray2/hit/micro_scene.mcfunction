@@ -1,0 +1,2 @@
+execute as @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1,limit=1] run function microbuilder:math/ray2/hit/micro_scene_scene_manager
+execute if data storage microbuilder:calc math.ray2{hit:1b} run data modify entity @s Pos set from storage microbuilder:calc math.ray2.crossings[-1]

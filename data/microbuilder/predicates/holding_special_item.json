@@ -1,0 +1,33 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:glass_bottle"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "nbt": "{microbuilder:{scene_in_a_bottle:1b}}"
+          }
+        }
+      }
+    }
+  ]
+}
+

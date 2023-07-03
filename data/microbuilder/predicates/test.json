@@ -1,0 +1,53 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "value_check",
+          "range": 4,
+          "value": {
+            "score": "microbuilder.calc",
+            "target": {
+              "name": "x",
+              "type": "fixed"
+            },
+            "type": "score"
+          }
+        }
+      },
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "value_check",
+          "range": 4,
+          "value": {
+            "score": "microbuilder.calc",
+            "target": {
+              "name": "y",
+              "type": "fixed"
+            },
+            "type": "score"
+          }
+        }
+      },
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "value_check",
+          "range": 4,
+          "value": {
+            "score": "microbuilder.calc",
+            "target": {
+              "name": "z",
+              "type": "fixed"
+            },
+            "type": "score"
+          }
+        }
+      }
+    ]
+  }
+}

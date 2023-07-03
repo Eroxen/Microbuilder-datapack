@@ -1,0 +1,1202 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder:mob_wall_head"
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder.calc:chests",
+                  "state": {
+                    "type": "left"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 1
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 13
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 1,
+                "max": 14
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder.calc:chests",
+                  "state": {
+                    "type": "right"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 14
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 13
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 1,
+                "max": 14
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:hopper"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:hopper"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 9
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:hopper"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 6,
+                "max": 9
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 7
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 3
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:fence_gates",
+                  "state": {
+                    "in_wall": "false"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 6,
+                "max": 9
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:fence_gates",
+                  "state": {
+                    "in_wall": "true"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 6,
+                "max": 9
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 12
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:lectern"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:lectern"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 13
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:lectern"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 10,
+                "max": 13
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:lectern"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 12,
+                "max": 15
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 5,
+                "max": 9
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:lectern"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 14
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 9,
+                "max": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:trapdoors"
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:doors",
+                  "state": {
+                    "open": "false"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:doors",
+                  "state": {
+                    "open": "true",
+                    "hinge": "right"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:doors",
+                  "state": {
+                    "open": "true",
+                    "hinge": "left"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 2
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:wall_torch",
+                    "minecraft:soul_wall_torch",
+                    "minecraft:redstone_wall_torch"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 6,
+                "max": 9
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 3,
+                "max": 12
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 11
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:tripwire_hook"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 9
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:wall_signs"
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 4,
+                "max": 11
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 14
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder.calc:wall_banners"
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 12
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 14
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

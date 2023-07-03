@@ -1,0 +1,11 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "tag": "microbuilder:6_rotatable_towards_player"
+      }
+    }
+  }
+}

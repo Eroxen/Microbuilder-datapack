@@ -1,0 +1,69 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "microbuilder:full_side_support"
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:slabs",
+          "state": {
+            "type": "double"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:snow"
+          ],
+          "state": {
+            "layers": 8
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:wheat"
+          ],
+          "state": {
+            "age": 7
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:honey_block",
+            "minecraft:cobweb"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "microbuilder:double_plant"
+        }
+      }
+    }
+  ]
+}

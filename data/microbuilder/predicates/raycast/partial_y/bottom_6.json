@@ -1,0 +1,56 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:snow"
+          ],
+          "state": {
+            "layers": 3
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:wheat",
+            "minecraft:beetroots"
+          ],
+          "state": {
+            "age": 2
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:carrots",
+            "minecraft:potatoes"
+          ],
+          "state": {
+            "age": 4
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:daylight_detector"
+          ]
+        }
+      }
+    }
+  ]
+}

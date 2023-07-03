@@ -1,0 +1,3 @@
+tag @e[type=interaction,tag=microbuilder.building_mode_hitbox,tag=microbuilder.building_mode_hitbox.active] remove microbuilder.building_mode_hitbox.active
+execute as @a[tag=microbuilder.is_in_building_mode] at @s rotated as @s anchored eyes positioned ^ ^ ^ run function microbuilder:building_mode/player_tick
+kill @e[type=interaction,tag=microbuilder.building_mode_hitbox,tag=!microbuilder.building_mode_hitbox.active]

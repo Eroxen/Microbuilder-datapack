@@ -1,0 +1,17 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:trapdoors",
+          "state": {
+            "half": "top",
+            "open": "false"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_1"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_2"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_3"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_4"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_5"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_6"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_7"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_8"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_9"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_10"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_11"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_12"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_13"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_14"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/bottom_15"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/top_3"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/partial_y/top_8"
+    }
+  ]
+}

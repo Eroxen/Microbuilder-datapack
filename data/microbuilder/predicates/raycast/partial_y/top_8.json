@@ -1,0 +1,16 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:slabs",
+          "state": {
+            "type": "top"
+          }
+        }
+      }
+    }
+  ]
+}

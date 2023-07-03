@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#microbuilder:default_handling",
+    "#microbuilder:pillar",
+    "#microbuilder:horizontal_rotatable_towards_player",
+    "#microbuilder:6_rotatable_towards_player",
+    "#microbuilder:slab",
+    "#microbuilder:stairs"
+  ]
+}

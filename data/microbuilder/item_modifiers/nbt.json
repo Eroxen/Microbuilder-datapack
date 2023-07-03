@@ -1,0 +1,14 @@
+{
+  "function": "copy_nbt",
+  "source": {
+    "type": "storage",
+    "source": "microbuilder:calc"
+  },
+  "ops":[
+    {
+      "source": "Item.tag",
+      "target": "{}",
+      "op": "merge"
+    }
+  ]
+}

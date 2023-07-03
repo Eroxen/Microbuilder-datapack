@@ -1,0 +1,51 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:air",
+            "minecraft:cave_air",
+            "minecraft:void_air"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder:raycast/glass"
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "math.raycast.ignore_glass"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

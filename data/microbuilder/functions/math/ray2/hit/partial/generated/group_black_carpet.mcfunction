@@ -1,0 +1,1 @@
+data modify storage microbuilder:calc math.ray2.partial_int set value {'px': [{'s': 0.0, 'partial': [{'y': [0.0, 0.0625]}]}], 'py': [{'s': 0.0}], 'pz': [{'s': 0.0, 'partial': [{'y': [0.0, 0.0625]}]}], 'nx': [{'s': 1.0, 'partial': [{'y': [0.0, 0.0625]}]}], 'ny': [{'s': 0.0625}], 'nz': [{'s': 1.0, 'partial': [{'y': [0.0, 0.0625]}]}]}

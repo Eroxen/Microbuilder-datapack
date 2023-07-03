@@ -1,0 +1,424 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "half": "bottom"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "half": "top"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "straight"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "inner_left"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "inner_right"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "outer_left"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "outer_right"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "inner_left"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "minecraft:stairs",
+                  "state": {
+                    "shape": "inner_right"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "z"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "x"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

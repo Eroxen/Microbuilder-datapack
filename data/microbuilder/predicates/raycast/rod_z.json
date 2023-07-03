@@ -1,0 +1,46 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:end_rod",
+            "minecraft:lightning_rod"
+          ],
+          "state": {
+            "facing": "north"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:end_rod",
+            "minecraft:lightning_rod"
+          ],
+          "state": {
+            "facing": "south"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:chain"
+          ],
+          "state": {
+            "axis": "z"
+          }
+        }
+      }
+    }
+  ]
+}

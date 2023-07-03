@@ -1,0 +1,100 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:ender_chest",
+            "minecraft:conduit",
+            "minecraft:grass",
+            "minecraft:fern",
+            "minecraft:warped_roots",
+            "minecraft:crimson_roots",
+            "minecraft:dead_bush",
+            "minecraft:torch",
+            "minecraft:soul_torch",
+            "minecraft:redstone_torch",
+            "minecraft:oak_sapling",
+            "minecraft:spruce_sapling",
+            "minecraft:birch_sapling",
+            "minecraft:jungle_sapling",
+            "minecraft:acacia_sapling",
+            "minecraft:dark_oak_sapling",
+            "minecraft:azalea",
+            "minecraft:flowering_azalea"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "microbuilder:mob_head"
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "microbuilder:chests",
+          "state": {
+            "type": "single"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "state": {
+            "facing": "down"
+          },
+          "blocks": [
+            "minecraft:hopper"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:walls"
+        }
+      }
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/rod_x"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/rod_y"
+    },
+    {
+      "condition": "reference",
+      "name": "microbuilder:raycast/rod_z"
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:pressure_plates"
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "minecraft:flower_pots"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ run tp @e[type=interaction,tag=microbuilder.building_mode_hitbox,distance=..1,limit=1,sort=nearest] ~ ~ ~
+execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ unless entity @e[type=interaction,tag=microbuilder.building_mode_hitbox,distance=..0.01] run summon interaction ~ ~ ~ {Tags:["microbuilder.building_mode_hitbox"],width:2,height:2,response:1b}
+execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ run tag @e[type=interaction,tag=microbuilder.building_mode_hitbox,tag=!microbuilder.building_mode_hitbox.active,distance=..0.01,limit=1] add microbuilder.building_mode_hitbox.active

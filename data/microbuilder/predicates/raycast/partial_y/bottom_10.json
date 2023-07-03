@@ -1,0 +1,31 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:snow"
+          ],
+          "state": {
+            "layers": 5
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:wheat"
+          ],
+          "state": {
+            "age": 4
+          }
+        }
+      }
+    }
+  ]
+}

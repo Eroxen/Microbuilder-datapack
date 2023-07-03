@@ -1,0 +1,16 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:dirt_path",
+            "minecraft:farmland"
+          ]
+        }
+      }
+    }
+  ]
+}

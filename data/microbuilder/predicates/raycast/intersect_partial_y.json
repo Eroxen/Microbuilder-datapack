@@ -1,0 +1,549 @@
+{
+  "condition": "alternative",
+  "terms": [
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_1"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 0
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_2"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_3"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 2
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_4"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 3
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_5"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 4
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_6"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 5
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_7"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 6
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_8"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_9"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 8
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_10"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 9
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_11"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 10
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_12"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 11
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_13"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 12
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_14"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/bottom_15"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "max": 14
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/top_3"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 13
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "inverted",
+      "term": {
+        "condition": "alternative",
+        "terms": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "reference",
+              "name": "microbuilder:raycast/partial_y/top_8"
+            }
+          },
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "y"
+                },
+                "score": "microbuilder.calc"
+              },
+              "range": {
+                "min": 8
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "alternative",
+    "terms": [
+      {
+        "condition": "inverted",
+        "term": {
+          "condition": "alternative",
+          "terms": [
+            {
+              "condition": "location_check",
+              "predicate": {
+                "block": {
+                  "tag": "microbuilder:raycast/partial_xyz_rotatable"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condition": "reference",
+        "name": "microbuilder:raycast/partial_xyz"
+      },
+      {
+        "condition": "location_check",
+        "predicate": {
+          "block": {
+            "tag": "minecraft:trapdoors",
+            "state": {
+              "open": "false"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
