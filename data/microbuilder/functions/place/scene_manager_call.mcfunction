@@ -25,7 +25,7 @@ scoreboard players operation z microbuilder.calc /= op microbuilder.calc
 execute if data storage microbuilder:calc place.further_processing run function microbuilder:place/further_processing
 
 data modify storage microbuilder:calc scene set from entity @s data.scene
-function microbuilder:scene/get_element
+function microbuilder:scene/api/get_element
 
 #tellraw @a [{"score":{"name":"x","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"y","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"z","objective":"microbuilder.calc"}},{"text":" contains: "},{"nbt":"scene_element","storage":"microbuilder:calc"}]
 

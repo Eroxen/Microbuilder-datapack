@@ -1,0 +1,1 @@
+execute align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1,limit=1] run summon item_display ~ ~ ~ {Tags:["microbuilder.scene_renderer.root","microbuilder.scene_renderer"]}

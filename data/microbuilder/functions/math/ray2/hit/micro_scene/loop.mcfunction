@@ -84,7 +84,8 @@ scoreboard players operation y microbuilder.calc /= precision microbuilder.calc
 scoreboard players operation z microbuilder.calc /= precision microbuilder.calc
 #tellraw @a [{"score":{"name":"hit_face_x","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"hit_face_y","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"hit_face_z","objective":"microbuilder.calc"}},{"text":" | "},{"score":{"name":"x","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"y","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"z","objective":"microbuilder.calc"}}]
 
-function microbuilder:scene/get_element
+function microbuilder:scene/api/get_element
+#tellraw @a {"nbt":"scene_element","storage":"microbuilder:calc"}
 execute store result score contents microbuilder.calc run data get storage microbuilder:calc scene_element
 execute if score contents microbuilder.calc matches 1.. run function microbuilder:math/ray2/hit/micro_scene/hit_voxel
 
