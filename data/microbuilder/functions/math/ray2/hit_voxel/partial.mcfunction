@@ -6,7 +6,7 @@ function ray2:api/multiface_intersect
 
 execute if score #ray2.mfi.hit ray2.calc matches 0 run return 0
 
-scoreboard players operation #ray2.partial_distance microbuilder.calc += #ray2.mfi.distance ray2.calc
+scoreboard players operation #ray2.traversed_distance microbuilder.calc += #ray2.mfi.distance ray2.calc
 
 data modify storage ray2:calc root.hit_candidates append value {types:["microbuilder:micro_scene"],pos:[0,0,0]}
 scoreboard players operation #ray2.pos.x microbuilder.calc = #ray2.mfi.hit.x ray2.calc
