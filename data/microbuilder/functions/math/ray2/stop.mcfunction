@@ -1,5 +1,0 @@
-execute if data storage microbuilder:calc math.ray2.hit_info.full_face_normal run data modify storage microbuilder:calc math.ray2.hit_info.face_normal set from storage microbuilder:calc math.ray2.hit_info.full_face_normal
-execute if data storage microbuilder:calc math.ray2.hit_info.partial_face_normal run data modify storage microbuilder:calc math.ray2.hit_info.face_normal set from storage microbuilder:calc math.ray2.hit_info.partial_face_normal
-execute if data storage microbuilder:calc math.ray2.hit_info.micro_scene_face_normal run data modify storage microbuilder:calc math.ray2.hit_info.face_normal set from storage microbuilder:calc math.ray2.hit_info.micro_scene_face_normal
-
-execute if data storage microbuilder:calc math.ray2.hit_info.partial_distance if data storage microbuilder:calc math.ray2.hit_info.micro_scene_distance run function microbuilder:math/ray2/hit/both_partial_and_micro_scene

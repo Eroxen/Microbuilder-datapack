@@ -1,3 +1,0 @@
-execute if predicate microbuilder:ray2/full run function microbuilder:math/ray2/hit/full
-execute unless predicate microbuilder:ray2/full if block ~ ~ ~ #microbuilder:ray2/partial run function microbuilder:math/ray2/hit/partial
-execute align x align y align z positioned ~0.5 ~0.5 ~0.5 if entity @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1,limit=1] run function microbuilder:math/ray2/hit/micro_scene

@@ -1,0 +1,46 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "ray2:generated/group_acacia_leaves"
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "ray2:generated/group_acacia_slab",
+          "state": {
+            "type": "double"
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "ray2:generated/group_snow",
+          "state": {
+            "layers": 8
+          }
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "predicate": {
+        "block": {
+          "tag": "ray2:generated/group_wheat",
+          "state": {
+            "age": 7
+          }
+        }
+      }
+    }
+  ]
+}
