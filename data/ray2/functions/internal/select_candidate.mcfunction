@@ -34,3 +34,11 @@ scoreboard players operation #ray2.temp.world_pos ray2.calc *= #ray2.1000 ray2.c
 execute store result score #ray2.temp.sub_block_pos ray2.calc run data get storage ray2:calc root.selected_candidate.pos[2] 1
 scoreboard players operation #ray2.temp.world_pos ray2.calc += #ray2.temp.sub_block_pos ray2.calc
 execute store result storage ray2:api result.pos[2] double 0.001 run scoreboard players get #ray2.temp.world_pos ray2.calc
+
+data modify storage ray2:api result.normal set value {}
+execute if data storage ray2:calc root.selected_candidate{normal:0} run data modify storage ray2:api result.normal.axis set value "x"
+execute if data storage ray2:calc root.selected_candidate{normal:0} store result storage ray2:api result.normal.sign int -1 run scoreboard players get #ray2.l.sign.x ray2.calc
+execute if data storage ray2:calc root.selected_candidate{normal:1} run data modify storage ray2:api result.normal.axis set value "y"
+execute if data storage ray2:calc root.selected_candidate{normal:1} store result storage ray2:api result.normal.sign int -1 run scoreboard players get #ray2.l.sign.y ray2.calc
+execute if data storage ray2:calc root.selected_candidate{normal:2} run data modify storage ray2:api result.normal.axis set value "z"
+execute if data storage ray2:calc root.selected_candidate{normal:2} store result storage ray2:api result.normal.sign int -1 run scoreboard players get #ray2.l.sign.z ray2.calc

@@ -21,7 +21,7 @@ scoreboard players operation #ray2.partial_distance ray2.calc += #ray2.mfi.dista
 execute if score #ray2.partial_distance ray2.calc > #ray2.max_distance ray2.calc run return 0
 
 data modify storage ray2:calc root.hit_candidates append value {types:["partial_block","block"],pos:[0,0,0]}
-execute store result storage ray2:calc root.hit_candidates[-1].pos[0] int 1 run scoreboard players get #ray2.mfi.axis ray2.calc
+execute store result storage ray2:calc root.hit_candidates[-1].normal int 1 run scoreboard players get #ray2.mfi.axis ray2.calc
 execute store result storage ray2:calc root.hit_candidates[-1].pos[0] int 1 run scoreboard players get #ray2.mfi.hit.x ray2.calc
 execute store result storage ray2:calc root.hit_candidates[-1].pos[1] int 1 run scoreboard players get #ray2.mfi.hit.y ray2.calc
 execute store result storage ray2:calc root.hit_candidates[-1].pos[2] int 1 run scoreboard players get #ray2.mfi.hit.z ray2.calc
