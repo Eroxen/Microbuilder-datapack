@@ -1,0 +1,2 @@
+execute if score #place.current_block_state microbuilder.calc matches 0 if score voxel_y microbuilder.calc matches 500.. run scoreboard players set #place.new_block_state microbuilder.calc 2
+execute if score #place.current_block_state microbuilder.calc matches 1 if score voxel_y microbuilder.calc matches ..500 run scoreboard players set #place.new_block_state microbuilder.calc 2

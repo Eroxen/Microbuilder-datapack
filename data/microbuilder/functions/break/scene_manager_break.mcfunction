@@ -8,4 +8,4 @@ data modify storage microbuilder:calc break.success set value 1b
 
 function microbuilder:scene/api/unrender_single
 
-execute if score kill microbuilder.calc matches 1 run kill @s
+execute if score kill microbuilder.calc matches 1 run function microbuilder:scene/api/kill

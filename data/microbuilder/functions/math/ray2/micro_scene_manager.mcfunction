@@ -2,7 +2,6 @@ data modify storage microbuilder:calc math.ray2.micro_scene set value {x:[],y:[]
 
 scoreboard players set #ray2.stop microbuilder.calc 0
 scoreboard players set #ray2.hit microbuilder.calc 0
-scoreboard players set #1000 microbuilder.calc 1000
 scoreboard players set #ray2.traversed_distance microbuilder.calc 0
 execute store result score scale microbuilder.calc run data get entity @s data.scale 1
 data modify storage microbuilder:calc scene set from entity @s data.scene

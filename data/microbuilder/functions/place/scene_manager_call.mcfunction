@@ -22,12 +22,16 @@ scoreboard players operation x microbuilder.calc /= op microbuilder.calc
 scoreboard players operation y microbuilder.calc /= op microbuilder.calc
 scoreboard players operation z microbuilder.calc /= op microbuilder.calc
 
-execute if data storage microbuilder:calc place.further_processing run function microbuilder:place/further_processing
-
 data modify storage microbuilder:calc scene set from entity @s data.scene
 function microbuilder:scene/api/get_element
 
-#tellraw @a [{"score":{"name":"x","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"y","objective":"microbuilder.calc"}},{"text":", "},{"score":{"name":"z","objective":"microbuilder.calc"}},{"text":" contains: "},{"nbt":"scene_element","storage":"microbuilder:calc"}]
+# block already present
+execute if data storage microbuilder:calc scene_element.state store result score #place.current_block_id microbuilder.calc run data get storage microbuilder:calc scene_element.state[0]
+execute if data storage microbuilder:calc scene_element.state store result score #place.current_block_state microbuilder.calc run data get storage microbuilder:calc scene_element.state[1]
+execute if data storage microbuilder:calc scene_element.state unless score #place.new_block_id microbuilder.calc = #place.current_block_id microbuilder.calc run return 0
 
-execute store result score contents microbuilder.calc run data get storage microbuilder:calc scene_element
-execute if score contents microbuilder.calc matches 0 run function microbuilder:place/scene_manager_place
+scoreboard players set #place.can_place microbuilder.calc 0
+execute if data storage microbuilder:calc scene_element.state run function microbuilder:place/get_state_add
+execute unless data storage microbuilder:calc scene_element.state run function microbuilder:place/get_state
+
+execute if score #place.can_place microbuilder.calc matches 1 run function microbuilder:place/scene_manager_place

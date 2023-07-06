@@ -1,5 +1,6 @@
-data modify storage microbuilder:calc EntityData set value {Tags:["microbuilder.scene","microbuilder.scene.block_state"],width:0.1,height:0.1,block_state:{Name:"minecraft:air"}}
+data modify storage microbuilder:calc EntityData set value {Tags:["microbuilder.scene","microbuilder.scene.block_state"],width:0.1,height:0.1,block_state:{Name:"minecraft:air",Properties:{}}}
 data modify storage microbuilder:calc EntityData.block_state.Name set from storage microbuilder:registry block.id
+data modify storage microbuilder:calc EntityData.block_state.Properties set from storage microbuilder:registry state.Properties
 execute store result storage microbuilder:calc EntityData.view_range float 0.001 run scoreboard players get view_range microbuilder.calc
 data modify storage microbuilder:calc EntityData.transformation set from storage microbuilder:calc render.block_transform
 

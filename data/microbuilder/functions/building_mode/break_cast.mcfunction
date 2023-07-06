@@ -1,3 +1,4 @@
+data modify storage ray2:api params set value {max_distance:4.5d,hit_micro_scene:1b}
 execute anchored eyes positioned ^ ^ ^ run function ray2:api/start
 
 execute if data storage ray2:api result{hit:0b} run return 0

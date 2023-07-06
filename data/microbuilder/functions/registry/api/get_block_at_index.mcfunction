@@ -8,5 +8,4 @@
 
 data remove storage microbuilder:registry block
 
-execute if score #index microbuilder.calc matches 0 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[0]
-execute if score #index microbuilder.calc matches 1 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[1]
+function microbuilder:registry/data/get_block_tree/0_511

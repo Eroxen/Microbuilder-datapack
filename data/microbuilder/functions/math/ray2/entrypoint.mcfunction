@@ -1,0 +1,1 @@
+execute if data storage ray2:api params{hit_micro_scene:1b} unless predicate ray2:full as @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1,limit=1] run function microbuilder:math/ray2/micro_scene_manager
