@@ -6,6 +6,3 @@ execute store result score #state_index microbuilder.calc run data get storage m
 function microbuilder:registry/api/get_state_at_index
 
 execute summon block_display run function microbuilder:scene/internal/render/type/block_state
-
-#tellraw @a {"nbt":"render.element","storage":"microbuilder:calc"}
-#tellraw @a {"score":{"name":"#render_pos","objective":"microbuilder.calc"}}

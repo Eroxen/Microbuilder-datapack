@@ -20,7 +20,6 @@ execute if score #place.update_neighbour microbuilder.calc matches 1 run data mo
 execute if score #place.update_neighbour microbuilder.calc matches 1 if score x microbuilder.calc < scale microbuilder.calc run function microbuilder:place/update_neighbours/update
 execute if score #place.update_neighbour microbuilder.calc matches 1 if score x microbuilder.calc >= scale microbuilder.calc positioned ~1 ~ ~ run function microbuilder:place/update_neighbours/overshoot
 
-
 execute store result score #place.update_neighbour microbuilder.calc if data storage microbuilder:calc neighbours.west.property.properties{subscribe_updates:["east"]}
 scoreboard players remove x microbuilder.calc 2
 execute if score #place.update_neighbour microbuilder.calc matches 1 run data modify storage microbuilder:calc update_neighbours.perspective set value {direction:"east"}

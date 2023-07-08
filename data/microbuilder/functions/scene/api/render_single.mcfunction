@@ -47,5 +47,7 @@ execute store result storage microbuilder:calc render.block_transform.translatio
 execute store result storage microbuilder:calc render.block_transform.translation[2] float 0.0000013875 run scoreboard players get #z_pos microbuilder.calc
 
 data modify storage microbuilder:calc render.element set from storage microbuilder:calc scene_element
-execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] on passengers if score @s microbuilder.render_pos = #render_pos microbuilder.calc run kill @s
-execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] run function microbuilder:scene/internal/render/element
+scoreboard players set #render.exists microbuilder.calc 0
+execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] on passengers if score @s microbuilder.render_pos = #render_pos microbuilder.calc run scoreboard players set #render.exists microbuilder.calc 1
+execute if score #render.exists microbuilder.calc matches 0 align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] run function microbuilder:scene/internal/render/element
+execute if score #render.exists microbuilder.calc matches 1 align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] run function microbuilder:scene/internal/render/update_element

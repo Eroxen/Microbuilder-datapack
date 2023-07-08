@@ -16,6 +16,6 @@ execute if data storage microbuilder:registry property{type:"slab"} run function
 execute if data storage microbuilder:registry property{type:"pillar"} run function microbuilder:place/get_state/pillar
 execute if data storage microbuilder:registry property{type:"horizontally_rotatable_inv"} run function microbuilder:place/get_state/horizontally_rotatable_inv
 execute if data storage microbuilder:registry property{type:"fully_rotatable_inv"} run function microbuilder:place/get_state/fully_rotatable_inv
-execute if data storage microbuilder:registry property{type:"stairs"} run function microbuilder:place/get_state/stairs
+execute if data storage microbuilder:registry property{type:"stairs"} run function microbuilder:place/get_state/stairs/new
 execute if data storage microbuilder:registry property{type:"fence"} run function microbuilder:place/get_state/fence/new
 execute store result storage microbuilder:calc place.scene_element.state[1] int 1 run scoreboard players get #place.state microbuilder.calc

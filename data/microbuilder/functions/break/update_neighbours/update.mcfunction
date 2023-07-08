@@ -5,6 +5,7 @@ scoreboard players operation #place.updated_state.before microbuilder.calc = #pl
 
 execute if data storage microbuilder:calc update_neighbours.perspective.this.property{type:"fence"} run function microbuilder:place/get_state/fence/update
 execute if data storage microbuilder:calc update_neighbours.perspective.this.property{type:"stairs"} run function microbuilder:place/get_state/stairs/update
+
 data modify storage microbuilder:calc neighbours set from storage microbuilder:calc update_neighbours.stack.neighbours
 execute if score #place.updated_state microbuilder.calc = #place.updated_state.before microbuilder.calc run return 0
 
