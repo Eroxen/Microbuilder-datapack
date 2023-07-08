@@ -1,5 +1,5 @@
 scoreboard players add #render_pos microbuilder.calc 10000
-execute store result storage microbuilder:calc render.block_transform.translation[0] float 0.00138889 run scoreboard players get #x_pos microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.translation[0] float 0.0000013875 run scoreboard players get #x_pos microbuilder.calc
 
 scoreboard players operation #y_pos microbuilder.calc = #y_base microbuilder.calc
 execute if data storage microbuilder:calc render.scene[0][][].state run function microbuilder:scene/internal/render/loop_y

@@ -8,4 +8,4 @@
 
 data remove storage microbuilder:registry block
 
-function microbuilder:registry/data/get_block_tree/0_511
+function microbuilder:registry/data/get_block_tree/0_1023

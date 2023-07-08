@@ -1,0 +1,8 @@
+execute if score #index microbuilder.calc matches 616 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[616]
+execute if score #index microbuilder.calc matches 617 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[617]
+execute if score #index microbuilder.calc matches 618 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[618]
+execute if score #index microbuilder.calc matches 619 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[619]
+execute if score #index microbuilder.calc matches 620 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[620]
+execute if score #index microbuilder.calc matches 621 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[621]
+execute if score #index microbuilder.calc matches 622 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[622]
+execute if score #index microbuilder.calc matches 623 run data modify storage microbuilder:registry block set from storage microbuilder:registry blocks[623]

@@ -18,12 +18,16 @@ scoreboard players operation #render_pos microbuilder.calc += y microbuilder.cal
 scoreboard players operation #render_pos microbuilder.calc *= #100 microbuilder.calc
 scoreboard players operation #render_pos microbuilder.calc += z microbuilder.calc
 
-scoreboard players set #step_size microbuilder.calc 720
+scoreboard players set #step_size microbuilder.calc 720720
 scoreboard players operation #step_size microbuilder.calc /= scale microbuilder.calc
 
-scoreboard players set #x_base microbuilder.calc -360
-scoreboard players set #y_base microbuilder.calc -360
-scoreboard players set #z_base microbuilder.calc -360
+scoreboard players set view_range microbuilder.calc 1400
+scoreboard players operation view_range microbuilder.calc /= scale microbuilder.calc
+scoreboard players add view_range microbuilder.calc 300
+
+scoreboard players set #x_base microbuilder.calc -360360
+scoreboard players set #y_base microbuilder.calc -360360
+scoreboard players set #z_base microbuilder.calc -360360
 scoreboard players operation #x_pos microbuilder.calc = x microbuilder.calc
 scoreboard players operation #y_pos microbuilder.calc = y microbuilder.calc
 scoreboard players operation #z_pos microbuilder.calc = z microbuilder.calc
@@ -35,12 +39,13 @@ scoreboard players operation #y_pos microbuilder.calc += #y_base microbuilder.ca
 scoreboard players operation #z_pos microbuilder.calc += #z_base microbuilder.calc
 
 data modify storage microbuilder:calc render.block_transform set value {scale:[0f,0f,0f],translation:[0f,0f,0f]}
-execute store result storage microbuilder:calc render.block_transform.scale[0] float 0.00138889 run scoreboard players get #step_size microbuilder.calc
-execute store result storage microbuilder:calc render.block_transform.scale[1] float 0.00138889 run scoreboard players get #step_size microbuilder.calc
-execute store result storage microbuilder:calc render.block_transform.scale[2] float 0.00138889 run scoreboard players get #step_size microbuilder.calc
-execute store result storage microbuilder:calc render.block_transform.translation[0] float 0.00138889 run scoreboard players get #x_pos microbuilder.calc
-execute store result storage microbuilder:calc render.block_transform.translation[1] float 0.00138889 run scoreboard players get #y_pos microbuilder.calc
-execute store result storage microbuilder:calc render.block_transform.translation[2] float 0.00138889 run scoreboard players get #z_pos microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.scale[0] float 0.0000013875 run scoreboard players get #step_size microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.scale[1] float 0.0000013875 run scoreboard players get #step_size microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.scale[2] float 0.0000013875 run scoreboard players get #step_size microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.translation[0] float 0.0000013875 run scoreboard players get #x_pos microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.translation[1] float 0.0000013875 run scoreboard players get #y_pos microbuilder.calc
+execute store result storage microbuilder:calc render.block_transform.translation[2] float 0.0000013875 run scoreboard players get #z_pos microbuilder.calc
 
 data modify storage microbuilder:calc render.element set from storage microbuilder:calc scene_element
+execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] on passengers if score @s microbuilder.render_pos = #render_pos microbuilder.calc run kill @s
 execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=item_display,tag=microbuilder.scene_renderer.root,distance=..0.1] run function microbuilder:scene/internal/render/element

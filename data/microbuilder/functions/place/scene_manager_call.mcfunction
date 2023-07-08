@@ -30,6 +30,7 @@ execute if data storage microbuilder:calc scene_element.state store result score
 execute if data storage microbuilder:calc scene_element.state store result score #place.current_block_state microbuilder.calc run data get storage microbuilder:calc scene_element.state[1]
 execute if data storage microbuilder:calc scene_element.state unless score #place.new_block_id microbuilder.calc = #place.current_block_id microbuilder.calc run return 0
 
+function microbuilder:scene/api/get_all_neighbours
 scoreboard players set #place.can_place microbuilder.calc 0
 execute if data storage microbuilder:calc scene_element.state run function microbuilder:place/get_state_add
 execute unless data storage microbuilder:calc scene_element.state run function microbuilder:place/get_state
