@@ -13,6 +13,6 @@ execute if score #invert microbuilder.calc matches 1 store result storage ray2:a
 
 data modify storage microbuilder:calc special.Pos set from entity @s Pos
 
-execute at @s run function microbuilder:building_mode/special_item
+execute at @s as @p[tag=microbuilder.special_item_caster] run function microbuilder:building_mode/special_item
 
 kill @s
