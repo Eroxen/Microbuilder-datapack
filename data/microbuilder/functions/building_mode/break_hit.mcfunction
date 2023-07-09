@@ -1,10 +1,10 @@
 data modify entity @s Pos set from storage ray2:api result.pos
-execute if data storage ray2:api result.normal{axis:"x",sign:-1} at @s run tp @s ~0.005 ~ ~
-execute if data storage ray2:api result.normal{axis:"x",sign:1} at @s run tp @s ~-0.005 ~ ~
-execute if data storage ray2:api result.normal{axis:"y",sign:-1} at @s run tp @s ~ ~0.005 ~
-execute if data storage ray2:api result.normal{axis:"y",sign:1} at @s run tp @s ~ ~-0.005 ~
-execute if data storage ray2:api result.normal{axis:"z",sign:-1} at @s run tp @s ~ ~ ~0.005
-execute if data storage ray2:api result.normal{axis:"z",sign:1} at @s run tp @s ~ ~ ~-0.005
+execute if data storage ray2:api result.normal{axis:"x",sign:-1} at @s run tp @s ~0.002 ~ ~
+execute if data storage ray2:api result.normal{axis:"x",sign:1} at @s run tp @s ~-0.002 ~ ~
+execute if data storage ray2:api result.normal{axis:"y",sign:-1} at @s run tp @s ~ ~0.002 ~
+execute if data storage ray2:api result.normal{axis:"y",sign:1} at @s run tp @s ~ ~-0.002 ~
+execute if data storage ray2:api result.normal{axis:"z",sign:-1} at @s run tp @s ~ ~ ~0.002
+execute if data storage ray2:api result.normal{axis:"z",sign:1} at @s run tp @s ~ ~ ~-0.002
 
 data modify storage microbuilder:calc break.Pos set from entity @s Pos
 

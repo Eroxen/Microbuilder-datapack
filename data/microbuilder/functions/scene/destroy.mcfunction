@@ -1,2 +1,0 @@
-execute align x align y align z positioned ~0.5 ~0.5 ~0.5 run summon marker ~ ~ ~ {Tags:["microbuilder.scene_renderer"]}
-execute align x align y align z positioned ~0.5 ~0.5 ~0.5 as @e[type=marker,tag=microbuilder.scene_renderer,distance=..0.1,limit=1] run function microbuilder:scene/render/destroy_marker

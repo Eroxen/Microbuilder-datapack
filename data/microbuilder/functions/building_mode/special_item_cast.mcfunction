@@ -1,5 +1,9 @@
-execute anchored eyes positioned ^ ^ ^ run function microbuilder:math/ray2
+data modify storage ray2:api params set value {max_distance:4.5d,hit_micro_scene:1b}
+execute anchored eyes positioned ^ ^ ^ run function ray2:api/start
 
-execute if data storage microbuilder:calc math.ray2{hit:1b} at @e[type=marker,distance=..16,tag=microbuilder.math.raycast,limit=1] positioned ^ ^ ^ run function microbuilder:building_mode/special_item
+execute if data storage ray2:api result{hit:0b} run return 0
 
-kill @e[type=marker,distance=..128,tag=microbuilder.math.raycast.hit]
+data modify storage microbuilder:calc special set value {success:0b}
+data modify storage microbuilder:calc special.Item set from entity @s SelectedItem
+
+execute summon marker run function microbuilder:building_mode/special_item_hit

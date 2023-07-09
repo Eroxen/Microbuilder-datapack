@@ -3,7 +3,7 @@ data modify storage microbuilder:calc EntityData.data set from storage microbuil
 execute summon marker run data modify entity @s {} merge from storage microbuilder:calc EntityData
 data modify storage microbuilder:calc scene set from storage microbuilder:calc EntityData.data.scene
 execute store result score scale microbuilder.calc run data get storage microbuilder:calc EntityData.data.scale 1
-execute as @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1,limit=1] run function microbuilder:scene/render
+execute as @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1,limit=1] run function microbuilder:scene/api/render_full
 
 execute if predicate microbuilder:consume_items run item replace entity @s weapon.mainhand with minecraft:glass_bottle
 

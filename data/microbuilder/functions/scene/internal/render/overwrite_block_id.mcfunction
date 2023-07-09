@@ -1,0 +1,3 @@
+execute if data storage microbuilder:registry block{id:"minecraft:torch"} run data modify storage microbuilder:calc EntityData.block_state.Name set value "minecraft:wall_torch"
+execute if data storage microbuilder:registry block{id:"minecraft:soul_torch"} run data modify storage microbuilder:calc EntityData.block_state.Name set value "minecraft:soul_wall_torch"
+execute if data storage microbuilder:registry block{id:"minecraft:redstone_torch"} run data modify storage microbuilder:calc EntityData.block_state.Name set value "minecraft:redstone_wall_torch"

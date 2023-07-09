@@ -1,10 +1,10 @@
 data modify entity @s Pos set from storage ray2:api result.pos
-execute if data storage ray2:api result.normal{axis:"x",sign:-1} at @s run tp @s ~-0.005 ~ ~
-execute if data storage ray2:api result.normal{axis:"x",sign:1} at @s run tp @s ~0.005 ~ ~
-execute if data storage ray2:api result.normal{axis:"y",sign:-1} at @s run tp @s ~ ~-0.005 ~
-execute if data storage ray2:api result.normal{axis:"y",sign:1} at @s run tp @s ~ ~0.005 ~
-execute if data storage ray2:api result.normal{axis:"z",sign:-1} at @s run tp @s ~ ~ ~-0.005
-execute if data storage ray2:api result.normal{axis:"z",sign:1} at @s run tp @s ~ ~ ~0.005
+execute if data storage ray2:api result.normal{axis:"x",sign:-1} at @s run tp @s ~-0.002 ~ ~
+execute if data storage ray2:api result.normal{axis:"x",sign:1} at @s run tp @s ~0.002 ~ ~
+execute if data storage ray2:api result.normal{axis:"y",sign:-1} at @s run tp @s ~ ~-0.002 ~
+execute if data storage ray2:api result.normal{axis:"y",sign:1} at @s run tp @s ~ ~0.002 ~
+execute if data storage ray2:api result.normal{axis:"z",sign:-1} at @s run tp @s ~ ~ ~-0.002
+execute if data storage ray2:api result.normal{axis:"z",sign:1} at @s run tp @s ~ ~ ~0.002
 
 execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=marker,tag=microbuilder.scene_manager,distance=..0.1] run function microbuilder:place/new_scene_manager
 
