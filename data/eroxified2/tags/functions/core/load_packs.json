@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "microbuilder:load"
+    "microbuilder:load",
+    "ray2:load"
   ]
 }
