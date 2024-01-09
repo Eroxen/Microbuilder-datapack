@@ -1,6 +1,15 @@
 {
     "pack": {
-        "pack_format": 15,
+        "pack_format": 26,
+        "supported_formats": [15, 26],
         "description": "Build tiny structures!\nMade by Eroxen."
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": [15, 25],
+                "directory": "grass"
+            }
+        ]
     }
 }
