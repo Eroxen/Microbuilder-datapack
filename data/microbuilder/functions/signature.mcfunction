@@ -1,0 +1,1 @@
+data modify storage eroxified2:api pack_signature set value {id:"microbuilder",version:[1,1,0],name:"Microbuilder",required_eroxified2_version:[1,0,0]}

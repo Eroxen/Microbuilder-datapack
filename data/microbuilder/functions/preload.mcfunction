@@ -1,0 +1,2 @@
+function microbuilder:signature
+function eroxified2:core/api/submit_signature

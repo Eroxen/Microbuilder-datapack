@@ -1,0 +1,86 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tadpole_bucket"
+    },
+    "title": "Microbuilder                ",
+    "description": {
+      "text": "Usage",
+      "color": "gold",
+      "underlined": true,
+      "extra": [
+        {
+          "text": "\n• Run ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "/trigger microbuilder",
+          "color": "dark_gray",
+          "underlined": false
+        },
+        {
+          "text": " to toggle ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "Micro Building Mode",
+          "color": "blue",
+          "underlined": false
+        },
+        {
+          "text": ". \n• When in ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "Micro Building Mode",
+          "color": "blue",
+          "underlined": false
+        },
+        {
+          "text": ", right-click to place and left-click to break blocks. Use a Glass Bottle to move micro scenes.",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "\n• Run ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "/trigger microbuilder.scale <value>",
+          "color": "dark_gray",
+          "underlined": false
+        },
+        {
+          "text": " to set the building scale. ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "<value>",
+          "color": "dark_gray",
+          "underlined": false
+        },
+        {
+          "text": " can be between 2 and 16.",
+          "color": "gray",
+          "underlined": false
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "eroxified2:core/installed_packs",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "sends_telemetry_event": false
+}
